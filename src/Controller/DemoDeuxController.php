@@ -15,7 +15,7 @@ class DemoDeuxController extends AbstractController
      */
     public function index(): Response
     {
-        return $this->render('demo_deux/index.html.twig');
+        return $this->render('demo_deux/demo2.html.twig');
     }
 
     /**

@@ -17,11 +17,14 @@ import DemoDeuxComponent from "./DemoDeuxComponent";
 
 
 new Vue({
-    components: { DemoComponent},
-    template: "<DemoComponent />"
-}).$mount("#demoComponent ");
+    data () {
+        return {
+          components: {DemoComponent},
+
+        }
+    }
+}).$mount('#app');
 
 new Vue({
-    components: { DemoDeuxComponent},
-    template: "<DemoDeuxComponent />"
-}).$mount("#demoDeuxComponent ");
+    components: {DemoDeuxComponent},
+}).$mount('#app');

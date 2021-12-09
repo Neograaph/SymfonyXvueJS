@@ -11,23 +11,26 @@
                  <link rel="stylesheet" href="/build/app.css"> -->
         {% endblock %}
     </head>
+
     <body>
+    <div id="app">
 
-        {% verbatim %}
+            {# {% verbatim %}
 
-        <div id="demoComponent">
-        </div>
-        <div id="demoDeuxComponent">
-        </div>
+            <div id="demoComponent">
+            </div>
+            <div id="demoDeuxComponent">
+            </div>
 
-        {% endverbatim %}
+            {% endverbatim %} #}
 
-        {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
+    </div>
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
 
-            <!-- Renders app.js & a webpack runtime.js file
-                <script src="/build/runtime.js"></script>
-                <script src="/build/app.js"></script> -->
-        {% endblock %}
+        <!-- Renders app.js & a webpack runtime.js file
+            <script src="/build/runtime.js"></script>
+            <script src="/build/app.js"></script> -->
+    {% endblock %}
     </body>
 </html>

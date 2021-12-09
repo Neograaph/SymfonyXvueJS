@@ -13,6 +13,6 @@ class DemoController extends AbstractController
      */
     public function index(): Response
     {
-        return $this->render('demo/index.html.twig');
+        return $this->render('demo/demo1.html.twig');
     }
 }
