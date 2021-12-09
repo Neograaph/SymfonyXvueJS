@@ -13,8 +13,15 @@ import './bootstrap';
 
 import Vue from 'vue'
 import DemoComponent from "./DemoComponent";
+import DemoDeuxComponent from "./DemoDeuxComponent";
+
 
 new Vue({
-    components: { DemoComponent },
+    components: { DemoComponent},
     template: "<DemoComponent />"
 }).$mount("#demoComponent ");
+
+new Vue({
+    components: { DemoDeuxComponent},
+    template: "<DemoDeuxComponent />"
+}).$mount("#demoDeuxComponent ");
