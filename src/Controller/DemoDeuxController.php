@@ -25,19 +25,22 @@ class DemoDeuxController extends AbstractController
     {
         $formerStudents = $request->query->get('formerStudents');
         $studentList = [
-            'Pierre',
-            'Sophie',
-            'Lucy',
-            'Marc',
-            'Nicolas'
+            'Iznobad',
+            'Cachacaboy',
+            'MadHat',
+            'Neograph',
+            'DocDoc',
+            'Seb',
+            'Vewo',
+            'Nhat',
+            'Macrod',
+            'Kuro'
         ];
 
         if($formerStudents == true){
             $formerStudentList = [
-                'Julie',
-                'Michael',
-                'Johny',
-                'Amber'
+                'Marc',
+                'Estelle'
             ];
             $studentList = array_merge($studentList,$formerStudentList);
         }
