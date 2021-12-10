@@ -12,7 +12,7 @@ export default {
 </script>
 
 <style scoped>
-body {
-    background-color: lightgray;
+h1 {
+    background-color: red;
 }
 </style>
