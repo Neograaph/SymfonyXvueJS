@@ -1,4 +1,25 @@
 const Encore = require('@symfony/webpack-encore');
+// const webpack = require('webpack')
+
+// mix.webpackConfig ({
+//   plugins: [
+//     new webpack.DefinePlugin({
+//       __VUE_OPTIONS_API__: true,
+//       __VUE_PROD_DEVTOOLS__: true,
+//     }),
+//   ],
+// })
+
+// Encore.DefinePlugin({
+//       __VUE_OPTIONS_API__: false,
+//       __VUE_PROD_DEVTOOLS__: false,
+//     });
+
+// résoudre l'erreur :Feature flags __VUE_OPTIONS_API__, __VUE_PROD_DEVTOOLS__ are not explicitly defined. You are running the esm-bundler build of Vue, which expects these compile-time feature flags to be globally injected via the bundler config in order to get better tree-shaking in the production bundle.
+
+// For more details, see http://link.vuejs.org/feature-flags.
+
+
 
 // Manually configure the runtime environment if not already configured yet by the "encore" command.
 // It's useful when you use tools that rely on webpack.config.js file.

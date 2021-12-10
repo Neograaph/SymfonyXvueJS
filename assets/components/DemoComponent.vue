@@ -10,3 +10,9 @@ export default {
   name: "DemoComponent"
 };
 </script>
+
+<style scoped>
+body {
+    background-color: lightgray;
+}
+</style>
