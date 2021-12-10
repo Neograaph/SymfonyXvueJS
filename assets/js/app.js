@@ -10,3 +10,13 @@ import '../styles/app.css';
 
 // start the Stimulus application
 import './bootstrap';
+
+import * as Vue from 'vue';
+
+Vue.createApp({
+  data (){
+    return {
+      title:'Yo mec',
+    }
+  }
+}).mount('#app');
