@@ -12,11 +12,18 @@ import '../styles/app.css';
 import './bootstrap';
 
 import * as Vue from 'vue';
+import DemoComponent from '../components/DemoComponent';
 
-Vue.createApp({
+const app = Vue.createApp({
   data (){
     return {
       title:'Yo mec',
     }
   }
-}).mount('#app');
+});
+
+app.component('demotest', {
+  template: 'component dans app.js'
+})
+
+app.mount('#app');
