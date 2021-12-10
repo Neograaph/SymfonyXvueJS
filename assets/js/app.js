@@ -11,19 +11,28 @@ import '../styles/app.css';
 // start the Stimulus application
 import './bootstrap';
 
-import * as Vue from 'vue';
-import DemoComponent from '../components/DemoComponent';
+import { createApp } from 'vue';
+import App from './App.vue';
 
-const app = Vue.createApp({
-  data (){
-    return {
-      title:'Yo mec',
-    }
-  }
-});
-
-app.component('demotest', {
-  template: 'component dans app.js'
-})
-
+const app = createApp(App);
 app.mount('#app');
+
+
+
+
+// OLD
+// import DemoComponent from '../components/DemoComponent';
+
+// const app = Vue.createApp({
+//   data (){
+//     return {
+//       title:'Yo mec',
+//     }
+//   }
+// });
+
+// app.component('demotest', {
+//   template: 'component dans app.js'
+// })
+
+// app.mount('#app');
